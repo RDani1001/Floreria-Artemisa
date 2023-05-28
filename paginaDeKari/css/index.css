@@ -1,0 +1,448 @@
+:root {
+  --fondo-claro: #FFD9DE;
+  --fondo-oscuro: #FF99A6;
+  --fondo-oscuro-transparente: #ff99a748;
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: 'Italianno';
+  src: url('../resources/fonts/Italianno.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url('../resources/fonts/Gothic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../resources/fonts/Commissioner.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Secular';
+  src: url('../resources/fonts/Secular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Belleza';
+  src: url('../resources/fonts/Belleza.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Indie';
+  src: url('../resources/fonts/IndieFlower.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BOTON WHATSAPP */
+
+.whatsapp_box {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  position: fixed;
+  bottom: 45px;
+  right: 20px;
+  z-index: 4;
+}
+
+.link_to_whatsapp {
+  width: max-content;
+  height: max-content;
+  background-color: #25D366;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.link_to_whatsapp:active {
+  background-color: #1b9748;
+}
+
+.whatsapp_icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* HEADER */
+
+.header {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--fondo-oscuro);
+  z-index: 2;
+}
+
+.header_nombre {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_nombre_tit {
+  font-size: 40px;
+  font-family: Italianno;
+  font-weight: bold;
+}
+
+.header_slogan {
+  font-family: Italianno;
+  font-size: 30px;
+}
+
+.header_icono img {
+  width: 80px;
+  height: 70px;
+}
+
+/* MAIN - INICIO */
+.inicio_fondo {
+  height: 87vh;
+  width: 100%;
+  top: 13vh;
+  position: absolute;
+  background-image: url('../resources/images/fondo.jpeg');
+  background-size: cover;
+  z-index: 1;
+}
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  height: 87vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.presentacion_tit {
+  font-size: 45px;
+  font-family: Secular;
+  text-align: center;
+  text-shadow: 10px 10px 5px  gray;
+}
+
+.presentacion_texto {
+  width: 80%;
+  font-size: 25px;
+  text-align: center;
+  font-family: Belleza;
+  margin-bottom: 30px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.informacion {
+  background-color: var(--fondo-claro);
+}
+
+/* MAIN - ACERCA DE NOSOTROS*/
+
+.cosasAVer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  height: 130vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fondo-claro);
+}
+
+.acerca_de_tit {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: Belleza;
+  color: rgb(214, 76, 7);
+  padding: 10px;
+  border-radius: 10px;
+  animation-name: cambiar-color;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.acerca_de_contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.acerca_de_texto {
+  font-family: Indie;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ffc5cd;
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+  border-radius: 20px;
+  animation-name: cambiar-shadow;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.contenido {
+  background-color: var(--fondo-oscuro-transparente);
+}
+
+.wave {
+  position: absolute;
+  top: 230vh;
+  z-index: 2;
+}
+
+
+/* MAIN - CONTENIDO DEL CURSO*/
+
+.contenido_del_curso {
+  position: absolute;
+  top: 230vh;
+  height: max-content;
+  min-height: 98vh;
+  max-height: 98vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fae4e7;
+  padding-bottom: 10vh;
+  overflow-y: scroll;
+}
+
+.contenido_del_curso_contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.contenido_del_curso_tit {
+  font-size: 30px;
+  font-family: Belleza;
+  font-weight: bold;
+}
+
+.contenido_del_curso_contenido {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 75%;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: padding .3s;
+}
+
+.--add_padding {
+  padding-bottom: 19px;
+}
+
+.contenido_del_curso_contenido_contenedor_tit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido_del_curso_contenido_tit {
+  font-family: Commissioner;
+  font-size: 20px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  width: 23px;
+  height: 23px;
+  border-radius: 10000000000px;
+}
+
+.vertical_stick {
+  position: relative;
+  left: 6px;
+  height: 10px;
+  width: 2px;
+  border: 1px solid black;
+}
+
+.horizontal_stick {
+  position: relative;
+  height: 2px;
+  width: 10px;
+  border: 1px solid black;
+}
+
+.contenido_del_curso_contenido_texto {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Gothic;
+  height: 0;
+}
+
+.contenido_del_curso_contenido_contenedor {
+  height: 0;
+  display: flex;
+}
+
+.contenido_del_curso_contenido_img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* MAIN - NUESTROS VALORES*/
+
+.nuestros_valores {
+  position: absolute;
+  top: 328vh;
+  height: max-content;
+  min-height: 98vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f0f0;
+  padding-bottom: 10vh;
+}
+
+.nuestros_valores_tema {
+  font-size: 35px;
+  font-style: italic;
+  font-family: Commissioner;
+}
+
+.nuestros_valores_informacion {
+  font-size: 18px;
+  font-family: Commissioner;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.nuestros_valores_texto {
+  margin-top: 20px;
+  font-family: Gothic;
+  height: 0;
+}
+
+.wave1 {
+  position: absolute;
+  top: 328vh;
+  z-index: 2;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  top: 426vh;
+  width: 100%;
+  height: 200px;
+  background-color: #fcbac3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_container_social_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_text {
+  font-size: 25px;
+  font-family: Secular;
+}
+
+.footer_container_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_img {
+  width: 70px;
+  height: 70px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ANIMACIONES */
+
+@keyframes cambiar-color {
+  0%{
+    background-color: var(--fondo-claro);
+  }
+
+  25%{
+    background-color: #ffc5cd;
+  }
+
+  100%{
+    background-color: var(--fondo-claro);
+  }
+}
+
+@keyframes cambiar-shadow {
+  0%{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.416);
+  }
+
+  25%{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0);
+  }
+
+  100%{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.416);
+  }
+}
